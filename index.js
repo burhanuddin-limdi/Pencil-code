@@ -58,3 +58,23 @@ drag = (event) => {
     console.log(direction);
   }
 };
+var letVerDrag = false;
+verDragStart = () =>{
+  letVerDrag=true;
+}
+verDragEnd = ()=>{
+  letVerDrag = false;
+}
+verDrag = (event) => {
+  console.log(event);
+  if(letVerDrag){
+
+    let page = document.querySelector("main");
+    let topHeight = event.clientY;
+    let rowHeights = [topHeight, 10 , page.clientHeight - topHeight];
+    rowHeights = rowHeights.map((h) => h.toString() + "px");
+    let newRows = rowHeights.join(' ');
+    page.style.gridTemplateRows = newRows;
+    console.log(newRows);
+  }
+};

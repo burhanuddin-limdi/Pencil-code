@@ -566,8 +566,12 @@ video {
   width: 100%;
 }
 
-.w-\[33vw\] {
-  width: 33vw;
+.cursor-row-resize {
+  cursor: row-resize;
+}
+
+.cursor-col-resize {
+  cursor: col-resize;
 }
 
 .resize-none {
