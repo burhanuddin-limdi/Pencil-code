@@ -1,0 +1,33 @@
+main {
+  display: grid;
+  grid-template-areas: "html left-drag css right-drag js" "bottom-drag bottom-drag bottom-drag bottom-drag bottom-drag" "code code code code code";
+  grid-template-columns: 1fr 10px 1fr 10px 1fr;
+  grid-template-rows: 3fr 10px 7fr;
+  /* grid-template-columns: min-content; */
+}
+#html {
+  grid-area: html;
+}
+#left-drag {
+  grid-area: left-drag;
+  background-color: gray;
+}
+#right-drag {
+  grid-area: right-drag;
+  background-color: gray;
+}
+#bottom-drag {
+  grid-area: bottom-drag;
+  background-color: gray;
+}
+#css {
+  grid-area: css;
+}
+#js {
+  grid-area: js;
+}
+#code {
+  grid-area: code;
+  border:1px solid black;
+
+}
