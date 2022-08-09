@@ -9,25 +9,59 @@
     <title>Document</title>
   </head>
   <body class="bg-slate-600">
-    <main class="w-full" onmousemove="drag(event);verDrag(event)" onmouseup="endDrag()">
-      <textarea
-        class="border-black border bg-gray-900 text-blue-100 focus:outline-none overflow-auto resize-none"
+    <nav></nav>
+    <main
+      class="w-full"
+      onmousemove="drag(event);verDrag(event)"
+      onmouseup="endDrag()"
+    >
+      <div
+        class="border-black border"
         id="html"
-        placeholder="html"
-      ></textarea>
-      <div id="left-drag" onmousedown="leftDrag()" class="cursor-col-resize"></div>
-      <textarea
-        class="border-black border bg-gray-900 text-blue-100 focus:outline-none overflow-auto resize-none"
+      >
+      <div class="w-full bg-black">
+        <div class="w-fit bg-gray-900 text-blue-100 px-1">HTML</div>
+      </div>
+        <textarea
+          class="w-full h-full bg-gray-900 text-blue-100 focus:outline-none overflow-hidden resize-none"l"
+        ></textarea>
+      </div>
+
+      <div
+        id="left-drag"
+        onmousedown="leftDrag()"
+        class="cursor-col-resize"
+      ></div>
+      <div
+        class="border-black border"
         id="css"
-        placeholder="css"
-      ></textarea>
-      <div id="right-drag" onmousedown="rightDrag()" class="cursor-col-resize"></div>
-      <textarea
-        class="border-black border bg-gray-900 text-blue-100 focus:outline-none overflow-auto resize-none"
-        id="js"
-        placeholder="js"
-      ></textarea>
-      <div id="bottom-drag" class="cursor-row-resize" onmousedown="verDragStart()" onmouseup="verDragEnd()"></div>
+      >
+      <div class="w-full bg-black">
+        <div class="w-fit bg-gray-900 text-blue-100 px-1">CSS</div>
+      </div>
+        <textarea
+          class="w-full h-full bg-gray-900 text-blue-100 focus:outline-none overflow-hidden resize-none""
+        ></textarea>
+      </div>
+      <div
+        id="right-drag"
+        onmousedown="rightDrag()"
+        class="cursor-col-resize"
+      ></div>
+      <div class="border-black border" id="js">
+        <div class="w-full bg-black">
+          <div class="w-fit bg-gray-900 text-blue-100 px-1">JS</div>
+        </div>
+        <textarea
+          class="w-full h-full bg-gray-900 text-blue-100 focus:outline-none overflow-hidden resize-none"
+        ></textarea>
+      </div>
+      <div
+        id="bottom-drag"
+        class="cursor-row-resize"
+        onmousedown="verDragStart()"
+        onmouseup="verDragEnd()"
+      ></div>
       <iframe class="bg-white w-full h-[67vh]" id="code"></iframe>
     </main>
   </body>
