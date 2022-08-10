@@ -1,8 +1,8 @@
 // MAIN LOGIC
 function Run() {
-  let html = document.querySelector("#html").value;
-  let css = "<style>" + document.querySelector("#css").value + "</style>";
-  let js = document.querySelector("#js").value;
+  let html = document.querySelector("#html textarea").value;
+  let css = "<style>" + document.querySelector("#css textarea").value + "</style>";
+  let js = document.querySelector("#js textarea").value;
   var frame = document.getElementById("code");
   var jsRun = document.getElementById("code").contentWindow;
   var frame = frame.contentWindow || frame.contentDocument;
